@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="transcript">
+  <h2>Транскрипт</h2>
+  <div id="student-info">
+    <!-- Populated by frontend or rendered server-side later -->
+  </div>
+  <table class="report-table">
+    <thead>
+      <tr>
+        <th>Код</th>
+        <th>Фан</th>
+        <th>Ҳузур %</th>
+        <th>Рейтинг 2-моҳа</th>
+        <th>Рейтинг 4-моҳа</th>
+        <th>Имтиҳон</th>
+      </tr>
+    </thead>
+    <tbody id="transcript-rows"></tbody>
+  </table>
+  <button class="no-print" onclick="window.print()">Чоп</button>
+</section>
+{% endblock %}
+
